@@ -1,0 +1,9 @@
+- name: Add_ReplicationKey
+  hosts: all
+  tasks:
+     - name: Deploy SSH Key
+       authorized_key: user=sshd
+                       key="{{ lookup('file', 'replication.pub') }}"
+                       state=present
+
+
