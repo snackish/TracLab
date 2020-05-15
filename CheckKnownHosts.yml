@@ -1,0 +1,10 @@
+- name: Add_known_hosts
+  hosts: z35.bci.mcgill.ca
+  tasks:
+     - name: add host key
+       known_hosts:
+         name: 132.206.108.171
+         key: 132.206.108.171 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5K9NkCOfh9/xKgns9tErBf23MomQ1+bvr6SVmdLj4n0VjmR07zGC4V8bJ9NLfcDXpUNhcinv1gfiy/fYc7pjOgFTgapseVDwboiQ5TQKA4KnHwnWXgzi8bXfrkHvJieVRY81dLesAAVUjCAJtRqTI9BJyijQC4Kq4TtxIQ5gqFQwszPm1orS05LXTTP9EJMqM2zRzIoVWAL0VqgndTkNCJ6XqlQJ5LiE2rK/B0rMkdprlBQZIIU0rhd5gIDZKjtfRfBuyRsn8YRsAmNpPomQWYbao4gHbPwCdu40S7MUYhBB9W88RteUU3H96KEndIyczJB7KdpDVgaMCq/TJu6CnoXKK5ME/MAtkiKE8ptHP54qkRIzINLw+mbjEz57zI/9Phge/BG2rWq/HxtNHHuK5Gm5oU6BNwqwbsuULpkobS54UK/3k5eX595K3PgA1aPgaEwJzRUKU7q37pVQMSIRldiYp1hbQ3c9Fbqba3uW9nLNTtZdBI59udZovhIUrBGoNA6tGb9IRsu6h9AziszNlRaImaIqRFUrzYpWVtiRXe5JgRnBjWfjEXq872xveHIMbEMY3BfcQ9LlRbXPKfRO7iNe1v15HKJyIUpyITrJEldDSGGQUaqAQnRSPLexaMn06H2Get53mYzpTWvfOgkkdMz9ujtXwY45FzQXa5MnCoQ==
+         path: /root/.ssh/known_hosts
+         state: present
+
